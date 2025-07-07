@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Freefall</title>
+</head>
+
+<body>
+    <div id="world">
+        <span id="time">0.0 s</span>
+        <button onclick="start()">start</button>
+        <button onclick="reset()">reset</button><br/>
+        <button id="airButton" onclick="toggleAir()">add air</button>
+        <img id="ball" src="./img/circle.png">
+    </div>
+    <div id="readouts">
+        <span>mass = 1.0 kg</span><br/>
+        <span id="resistance">resistance = 0.00 kg/m</span><br/>
+        <span id="velocity">velocity = 0.0 m/s</span><br/>
+        <span id="gravity">gravity = 0.0 N</span><br/>
+        <span id="drag">drag = 0.0 N</span>
+    </div>
+    <script src="./src/freefall.js"></script>
+</body>
+</html>
